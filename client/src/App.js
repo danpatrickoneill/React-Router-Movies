@@ -22,12 +22,21 @@ export default class App extends Component {
     this.setState({ savedList });
   };
 
+  clearSavedList = () => {
+    this.setState({
+      savedList: []
+    });
+  };
+
   render() {
     return (
       <Router>
         <div>
-          {/* Why does this list just display titles so nicely? */}
-          <SavedList list={this.state.savedList} />
+          {/* Why does this list just display titles so nicely? I figured it out!*/}
+          <SavedList
+            list={this.state.savedList}
+            clearSavedList={this.clearSavedList}
+          />
           <Route exact path="/" component={MovieList} />
           <Route
             path="/movies/:id"

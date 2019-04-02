@@ -34,6 +34,7 @@ export default class Movie extends Component {
   }
 
   saveMovie = () => {
+    // Why is this constructed this weird way?
     const addToSavedList = this.props.addToSavedList;
     addToSavedList(this.state.movie);
   };
