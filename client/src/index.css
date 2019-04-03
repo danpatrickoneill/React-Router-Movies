@@ -45,8 +45,9 @@ body {
 }
 .saved-active {
   color: blue;
-  border: 1px solid grey;
-  padding: 5px;
+  border: 5px solid grey;
+  padding: 1px;
+  font-weight: bold;
 }
 .save-wrapper {
   position: relative;
@@ -67,6 +68,12 @@ body {
 }
 
 .home-button {
-  padding: 5px 10px;
+  padding: 5px 30px;
   background-color: lightskyblue;
+  margin-bottom: 5px;
+}
+
+.clear-button {
+  padding: 5px 10px;
+  background-color: orangered;
 }
